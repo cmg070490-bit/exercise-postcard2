@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+.post {
+  background-color: white;
+  width: 470px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+i {
+  font-size: 0px;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.post-title h1 {
+  font-size: 20px;
+}
+
+.post-title p {
+  font-size: 14px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.post-img img {
+  width: 100%;
+  display: block;
+}
+
+.post-footer {
+  padding: 15px;
+  display: flex;
+}
+
+.post-footer-text {
+  padding: 15px;
+}
+i {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+i:hover {
+  opacity: 0.7;
+}
+
+.bi-heart:hover {
+  color: red;
+}
+
+.bi-chat:hover {
+  color: #555;
+}
+
+.bi-bookmark:hover {
+  color: gold;
+}
+
+.bi-bookmark{
+    margin-left: auto;
+    margin-left: 900%;
+}
