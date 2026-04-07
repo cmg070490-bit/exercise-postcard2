@@ -1,78 +1,95 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
+    background-color: #0b0b0b;
+    font-family: 'Press Start 2P', cursive;
+
+    display: flex;
+    justify-content: center;   /* centra horizontal */
+    align-items: center;       /* centra vertical */
+    height: 100vh;             /* ocupa toda la pantalla */
+    margin: 0;                 /* elimina margen por defecto */
 }
 
-.post {
-  background-color: white;
-  width: 470px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
+/* CONTENEDOR PRINCIPAL */
+.postcard{
+    padding: 30px;
+    background-color: white;
+    width: 600px;              /* ancho fijo tipo postcard */
+    height: 400px;
+
 }
 
-i {
-  font-size: 0px;
+/* HEADER */
+.one {
+    display: flex;
+    align-items: center;
 }
 
-.fa-ellipsis-vertical {
-  font-size: 20px;
+.one img {
+    margin-left: auto;         /* empuja logo a la derecha */
+    width: 60px;
+    height: auto;
 }
 
-.post-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
+/* CONTENIDO */
+.two {
+    display: flex;
+    gap: 20px;
+
+        align-items: stretch; /* 🔥 hace que ambos tengan misma altura */
+
 }
 
-.post-title h1 {
-  font-size: 20px;
+/* TEXTO IZQUIERDA */
+.two .text {
+    flex: 1;
 }
 
-.post-title p {
-  font-size: 14px;
+.two .text p {
+    margin-bottom: 15px;
+    font-size: 21px;
 }
 
-.menu {
-  margin-left: auto;
+.salto{
+    font-size: 1px;
 }
 
-.post-img img {
-  width: 100%;
-  display: block;
+/* FORM DERECHA */
+.two form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 
 }
 
-.post-footer {
-  padding: 15px;
-  display: flex;
+/* BOTÓN */
+.three {
+    margin-top: 20px;
 }
 
-.post-footer-text {
-  padding: 15px;
-}
-i {
-  font-size: 24px;
-  margin-right: 10px;
-  cursor: pointer;
+.three button {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+
+
 }
 
-i:hover {
-  opacity: 0.7;
+/* INPUTS */
+form input, form textarea {
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+    padding: 8px 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    resize: none;
+
+
 }
 
-.bi-heart:hover {
-  color: red;
-}
-
-.bi-chat:hover {
-  color: #555;
-}
-
-.bi-bookmark:hover {
-  color: gold;
-}
-
-.bi-bookmark{
-    margin-left: auto;
-    margin-left: 900%;
+input:focus, textarea:focus {
+    border-bottom: 2px solid blue;
 }
